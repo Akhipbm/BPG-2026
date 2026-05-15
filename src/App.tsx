@@ -281,12 +281,6 @@ export default function App() {
                     >
                       Reset Selection
                     </button>
-                    <button 
-                      onClick={removeAllBlank}
-                      className="px-4 py-2 text-xs font-bold bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-300 rounded-lg border border-indigo-500/20 transition-colors"
-                    >
-                      Remove All Blanks
-                    </button>
                   </div>
                 </div>
 
