@@ -1,5 +1,5 @@
 {
-  "name": "BlankPageGone - PDF Blank Page Remover",
+  "name": "BlankPageGone",
   "description": "Easily upload PDF documents, automatically detect and remove blank pages, and download the cleaned version.",
   "requestFramePermissions": [],
   "majorCapabilities": []
