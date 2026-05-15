@@ -197,8 +197,7 @@ export default function App() {
               <div 
                 onDragOver={onDragOver}
                 onDrop={onDrop}
-                onClick={() => fileInputRef.current?.click()}
-                className="w-full max-w-2xl backdrop-blur-xl bg-white/5 border border-white/10 rounded-[2rem] p-16 text-center hover:bg-white/[0.07] hover:border-white/20 transition-all cursor-pointer group shadow-2xl relative overflow-hidden"
+                className="w-full max-w-2xl backdrop-blur-xl bg-white/5 border border-white/10 rounded-[2rem] p-16 text-center hover:bg-white/[0.07] hover:border-white/20 transition-all group shadow-2xl relative overflow-hidden"
               >
                 {/* Decorative glow inside uploader */}
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-px bg-gradient-to-r from-transparent via-indigo-500/50 to-transparent"></div>
@@ -208,10 +207,13 @@ export default function App() {
                 </div>
                 <h2 className="font-display text-4xl font-bold text-white mb-3 tracking-tight">Drop your PDF document</h2>
                 <p className="text-slate-400 max-w-md mx-auto mb-10 text-lg leading-relaxed">
-                  Automatically identify and remove blank pages. No data ever leaves your computer.
+                  Automatically identify and remove blank pages.
                 </p>
                 <div className="flex flex-col items-center gap-4">
-                  <button className="bg-indigo-600 text-white px-10 py-4 rounded-xl font-bold hover:bg-indigo-500 transition-all shadow-xl shadow-indigo-600/20 active:scale-[0.98] text-lg">
+                  <button 
+                    onClick={() => fileInputRef.current?.click()}
+                    className="bg-indigo-600 text-white px-10 py-4 rounded-xl font-bold hover:bg-indigo-500 transition-all shadow-xl shadow-indigo-600/20 active:scale-[0.98] text-lg"
+                  >
                     Select PDF File
                   </button>
                   <p className="text-xs text-slate-500 font-medium tracking-wide uppercase">Max 200MB per file</p>
